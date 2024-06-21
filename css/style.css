@@ -14,7 +14,90 @@ html {
 /* 
     GENERAL
 */
-.container {
+
+/* 
+----------------------
+DESKTOP-FIRST
+----------------------
+*/
+/* .container {
     max-width: 1000px;
     margin: 0 auto;
+    background-color: red;
+    height: 200px;
+} */
+
+
+/* 
+    MEDIA QUERY
+    oppure
+    RESPONSIVE
+*/
+/* TABLET */
+/* @media screen and (max-width: 800px) {
+
+    .container {
+        max-width: 700px;
+        background-color: blue;
+    }
+
+} */
+
+/* SMARTPHONE */
+/* @media screen and (max-width: 400px) {
+
+    .container {
+        max-width: 300px;
+        background-color: yellow;
+    }
+
+} */
+
+/* 
+
+    Desktop-first:
+    - Media query con max-width
+    - Dimensioni schermo DECRESCENTI
+
+    Mobile-first:
+    - Media query con min-width
+    - Dimensioni schermo CRESCENTI
+
+*/
+
+
+
+/* 
+----------------------
+MOBILE-FIRST
+----------------------
+*/
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: yellow;
+    height: 200px;
+}
+
+/* 
+    MEDIA QUERY
+    oppure
+    RESPONSIVE
+*/
+@media screen and (min-width: 400px) {
+
+    .container {
+        max-width: 700px;
+        background-color: blue;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .container {
+        max-width: 1000px;
+        background-color: red;
+    }
+
 }
